@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+
+int main(){
+    int opcao,valor;
+
+    printf("conversor bases numericas\n");
+    printf("\n1: Decimal para hexadecial\n");
+    printf("2: Hexadecimal para decimal\n");
+    printf("\ninforme a opcao: ");
+    scanf("%d",&opcao);
+
+    if(opcao==1){
+        printf("informe o valor: ");
+        scanf("%d",&valor);
+        printf("%d em hexadecimal eh: %x\n",valor,valor);
+    } else if(opcao==2){
+    printf("informe o valor ");
+    scanf("%x",&valor);
+    printf("%x em decimal eh: %d\n",valor,valor);
+    }
+    else printf("\nopcao invalida\n\n");
+    system("pause");
+}
